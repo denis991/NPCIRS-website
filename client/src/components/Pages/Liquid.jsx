@@ -1,13 +1,9 @@
 import React from 'react';
 
-const Liquid = () => {
+function Liquid() {
   return (
-    <>
-    
-
-    </>
+    <>Liquid</>
   );
 }
 
 export default Liquid;
-
