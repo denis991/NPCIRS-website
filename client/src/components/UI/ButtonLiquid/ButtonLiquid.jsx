@@ -1,17 +1,21 @@
 import React, { useState } from 'react';
 import { Button } from 'reactstrap';
-
+/**
+ *
+ * @returns
+ * модель для отрисовки ещё меньшей части страницы с изминяеммым контентом
+ */
 function ButtonLiquid() {
   const [comp, setComp] = useState(1);
   return (
     <div>
       <ul className="nav nav-pills justify-content-center" role="navigation">
-        <l className="nav-item active" style={{ marginRight: '0.5%' }}>
+        <li className="nav-item active" style={{ marginRight: '0.5%', listStyle: 'none' }}>
           <Button color="primary" outline>
             <a className="nav-link px-3" data-bs-toggle="tab" href="#resume" onClick={() => setComp(1)}>1</a>
           </Button>
-        </l>
-        <li className="nav-item" style={{ marginRight: '0.5%' }}>
+        </li>
+        <li className="nav-item" style={{ marginRight: '0.5%', listStyle: 'none' }}>
           <Button color="primary" outline>
 
             <a className="nav-link px-3" data-bs-toggle="tab" href="#answers" onClick={() => setComp(2)}>
@@ -19,7 +23,7 @@ function ButtonLiquid() {
             </a>
           </Button>
         </li>
-        <li className="nav-itemЗ" style={{ marginRight: '0.5%' }}>
+        <li className="nav-itemЗ" style={{ marginRight: '0.5%', listStyle: 'none' }}>
           <Button
             color="primary"
             outline
@@ -29,7 +33,7 @@ function ButtonLiquid() {
             </a>
           </Button>
         </li>
-        <li className="nav-itemЗ" style={{ marginRight: '0.5%' }}>
+        <li className="nav-itemЗ" style={{ marginRight: '0.5%', listStyle: 'none' }}>
           <Button color="primary" outline>
             <a className="nav-link px-3" data-bs-toggle="tab" href="#comments" onClick={() => setComp(4)}>
               4
