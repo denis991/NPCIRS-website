@@ -8,7 +8,12 @@ const FileStore = require('session-file-store')(session);
 require('dotenv').config();
 
 const app = express();
-
+/**
+ *основной файл для базы данных
+ *тут лишнее может показаться сесии
+ * но сайт будет делаться регистрация если хватит время
+ * на данный момент тут одна ручка
+ */
 app.use(cors({ credentials: true, origin: 'http://localhost:3000' }));
 const PORT = process.env.DB_PORT;
 const territoryRouter = require('./routes/territory');
