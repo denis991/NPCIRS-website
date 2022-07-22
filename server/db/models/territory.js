@@ -5,7 +5,6 @@ const {
 module.exports = (sequelize, DataTypes) => {
   class Territory extends Model {
     static associate(models) {
-      // define association here
     }
   }
   Territory.init({
