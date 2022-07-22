@@ -3,7 +3,7 @@ import { GET_TERRITORY, PATCH_TERRITORY } from '../types/territoryTypes';
 
 export default (state = initState.territory, action) => {
   const { type, payload } = action;
-  switch (action.type) {
+  switch (type) {
     case GET_TERRITORY:
       return payload;
     default:
