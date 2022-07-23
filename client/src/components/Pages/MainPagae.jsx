@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Liquid from './Liquid';
+// import Time from './Time';
 /**
  *
  * @returns
@@ -9,6 +10,7 @@ import Liquid from './Liquid';
 function MainPagae() {
   return (
     <Routes>
+      {/* <Route path="/" element={<Time />} /> */}
       <Route path="/" element={<div>Главная страница</div>} />
       <Route path="/oshs" element={<div>oshs</div>} />
       <Route path="/resources" element={<div>resources</div>} />
